@@ -1,0 +1,164 @@
+/* Algemene stijl */
+body {
+    background-color: #E3F2FD;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #1A1A1A;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+/* Header en Footer */
+header, footer {
+    background-color: #0D47A1;
+    color: #E3F2FD;
+    width: 100%;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+footer { 
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+    padding: 20px;
+}
+
+div, form {
+    width: 60%;
+    margin:auto;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid  #64B5F6;
+    box-shadow: 5px 5px 5px #00000048;
+    background-color: #64B5F622;
+}
+
+/* Tekst en titels */
+h1 {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1, nav {
+    display: inline-block;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+/* Navigatie */
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    background-color: #64B5F6;
+    height: 60px;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+nav li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E3F2FD;
+    font-size: 30px;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px #454545;
+    width: 100%;
+    height: 100%;
+}
+
+nav li.active {
+    background-color: #ffc107d3;
+}
+
+nav li:hover {
+    background-color: #FFC107;
+    box-shadow: inset 5px 5px 5px #454545;
+}
+/* Formulieren */
+form h2 {
+    margin-left:10px;
+}
+input, textarea, button {
+    display: block;
+    width:100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid  #64B5F6;
+}
+input:hover, textarea:hover, input:focus, textarea:focus {
+    outline: 2px solid  #FFC107;
+}
+textarea {
+    height: 300px;
+}
+button {
+    background-color: #64B5F6;
+    border-bottom: 1px solid #0D47A1;
+    border-right: 1px solid #0D47A1;
+    box-shadow: inset 1px 1px 1px white;
+    padding:20px;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+button:hover {
+    border-top: 1px solid #0D47A1;
+    border-left: 1px solid #0D47A1;
+    box-shadow: inset -1px -1px 1px white;
+}
+
+button:active {
+    background-color: #FFC107;
+}
+
+
+/* Tabellen */
+table {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    font-size: 20px;
+}
+
+.cv th, .cv td {
+    border: 1px solid black;
+    padding: 10px;
+}
+.cv td {
+    background-color: #E3F2FD;
+}
+
+.cv th {
+    background-color: #FFC107;
+}
+
+/* Afbeeldingen */
+img {
+    width: 100%;
+    display: inline;
+    box-shadow: 5px 5px 5px #454545;
+}

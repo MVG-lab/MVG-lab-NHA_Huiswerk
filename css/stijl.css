@@ -1,0 +1,180 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body {
+            background-color:darkcyan;
+        }
+
+        header {
+            font-family: "Sofia", sans-serif;
+            position: relative;
+            min-height: 200px;
+            font-size: 60px;
+            text-shadow: 2px 2px 2px blue;
+            color: white;
+            align-items: center;
+            display: flex;
+            padding-left: 20px;
+            margin: 0px;
+            filter: drop-shadow(4px 4px 4px black);
+        }
+
+        header::before {
+            /* Ik vond geen goede afbeelding om als banner te gebruiken, maar dit werkt ook */
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/banner1.png");
+            background-size: cover;
+            background-position: center center;
+            filter: blur(1px);
+            z-index: -1;
+        }
+        @media only screen and (min-width: 768px) {
+            header {
+                font-size: 120px;
+                padding-left: 5s0px;
+            }
+        }
+        footer {
+            background-color: gray;
+            font-size: 20px;
+            color: white;
+            padding: 30px;
+            min-height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            filter: drop-shadow(0px -2px 6px black);
+        }
+
+        [class*="col-"] {
+            width: 100%;
+            padding: 15px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+            }
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+        }
+
+        /*
+            Ik heb getracht te werken met een grid van 11 kolommen, maar dat leek niet te werken. Daarom heb ik ook hierboven voor 12 kolommen gekozen, ipv de gevraagde 11.
+            .col-1 { width: 9%;  }
+            .col-2 { width: 18%; }
+            .col-3 { width: 27%; } 
+            .col-4 { width: 36%; } 
+            .col-5 { width: 45%; } 
+            .col-6 { width: 54%; } 
+            .col-7 { width: 63%; } 
+            .col-8 { width: 72%; } 
+            .col-9 { width: 81%; } 
+            .col-10 { width: 90%; } 
+            .col-11 { width: 100%; }  */
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: gray;
+            color: white;
+            text-align: center;
+            filter: drop-shadow(3px 3px 3px black);
+        }
+        
+        .article-feed {
+            background-color: grey;
+            margin: 15px auto;
+            margin-bottom: 30px;
+            padding: 15px;
+            filter: drop-shadow(3px 3px 3px black);
+            max-width: 95%;
+        }
+        @media only screen and (min-width: 768px) {
+         .article-feed {
+            max-width: 100%;
+         }
+        }
+        .article {
+            background-color: antiquewhite;
+            min-height: 300px;
+            padding: 15px;
+            margin-bottom: 15px;
+            clear: both;
+        }
+
+        .article h2 {
+            border-bottom: 2px solid darkgreen;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+        .article p {
+            padding-top: 10px;
+        }
+        .article img {
+            float: right;
+            max-height: 200px;
+            margin: 5px;
+            padding: 5px;
+            border: 3px solid grey
+        }
